@@ -27,6 +27,9 @@ and activated with:
 ```
 conda env create -f environment.yaml
 conda activate ldm
+# donwload checkpoints. For example v1.4
+wget https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt
+ln -s <path/to/model.ckpt> models/ldm/stable-diffusion-v1/model.ckpt
 ```
 
 You can also update an existing [latent diffusion](https://github.com/CompVis/latent-diffusion) environment by running
